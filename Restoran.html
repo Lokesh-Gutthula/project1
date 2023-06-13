@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Restoran</title>
+	<link rel="stylesheet" type="text/css" href="C:/Users/Lokesh G/Documents/WEB DEVELOPMENT/CSS/restoran.css">
+	<!-- Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	<!-- Icon Font Stylesheet -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<!-- https://fontawesome.com/v5/search?p=4&o=r&m=free -->
+	<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+
+	<!-- jquery js and popper CDN's -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+	
+	<script>
+		for (let i=0; i< 16; i++){
+				counting(i);
+			}
+		function counting(i){
+			setTimeout(function(){
+				document.getElementById("counter1").innerHTML = i;
+			},100*i)
+		}
+		
+	</script>
+	<script >
+		for (let i=0; i<=50; i++){
+				counting(i);
+			}
+		function counting(i){
+			setTimeout(function(){
+				document.getElementById("counter2").innerHTML = i;
+			},50*i)
+		}
+		
+	</script>
+
+</head>
+<body>
+	<div class="navigation pb-5">
+		<nav class="navbar navbar-expand-lg navbar-light align-items-center py-3 px-5">
+			<a href="#" class="navbar-brand fs-1 fw-bold" style="color:orange;"><i class="fa fa-utensils pe-3"></i>Restoran</a>
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#tog"><i class="fa fa-bars"></i></button>
+			<div class="collapse navbar-collapse justify-content-end" id="tog">
+				<ul class="navbar-nav align-items-center" id="ul1">
+					<li class="nav-item pe-2"><a href="#" class="nav-link" style="color:orange;">HOME</a></li>
+					<li class="nav-item pe-2"><a href="#" class="nav-link">ABOUT</a></li>
+					<li class="nav-item pe-2"><a href="#" class="nav-link">SERVICE</a></li>
+					<li class="nav-item pe-2"><a href="#" class="nav-link">MENU</a></li>
+					<li class="nav-item dropdown">
+						<a href="#" class="nav-link dropdown-toggle pe-2" data-bs-toggle="dropdown">PAGES</a>
+						<ul class="dropdown-menu" >
+							<li><a href="#" class="dropdown-item">BOOKING</a></li>
+							<li><a href="#" class="dropdown-item">OUR TEAM
+							</a></li>
+							<li><a href="#" class="dropdown-item">TESTIMONIAL</a></li>
+						</ul>
+					</li>
+					<li class="nav-item pe-2"><a href="#" class="nav-link">CONTACT</a></li>
+					<button class="btn btn-warning py-2 px-4 rounded-0 text-light fw-bold">BOOK A TABLE</button>
+				</ul>
+			</div>
+		</nav>
+		<div class="container my-5 pb-5 text-light position-relative">		
+<!-- data-mdb-toggle="animation"data-mdb-animation-reset="true"data-mdb-animation="slide-out-right" -->
+			<div class="row justify-content-center align-items-center">
+				<div class="col-lg-6 text-center text-lg-start py-5 pe-5"  id="slideLeft">
+					<h1 class="display-3 mb-2" id="side-heading">Enjoy Our<br>Delicious Meal</h1>
+					<p class="mb-5 pb-2 fw-bolder">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+					<a href="#"  class="nav-link text-light bg-warning py-3 mb-5 px-5 fw-bold d-inline">BOOK A TABLE</a>
+				</div>
+				<div class="col-lg-6 text-center " id="spin">
+					<img src="C:/Users/Lokesh G/Downloads/restoran/meal.png" width="100%"  class="rotate-image">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container my-5 py-5 ">
+		<div class="container px-4 ">
+			<div class="row " id="cards">
+				<div class="col-lg col-md-6 pb-4">
+					<div class="p-4 pe-3 shadow">
+						<i class="fas fa-user-tie display-5 mb-3 lh-base"></i>
+						<h5 class="fw-bold">Master Chefs</h5>
+						<p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+					</div>
+				</div>
+				<div class="col-lg col-md-6  pb-4 ">
+					<div class="p-4 pe-3 shadow">
+						<i class="fas fa-utensils pe-3 display-5 mb-3 lh-base"></i>
+						<h5 class="fw-bold">Quality Food</h5>
+						<p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+					</div>
+				</div>
+				<div class="col-lg col-md-6 pb-4">
+					<div class="p-4 pe-3 shadow">
+						<i class="fas fa-cart-plus display-5 mb-3 lh-base"></i>
+						<h5 class="fw-bold">Online Order</h5>
+						<p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+					</div>
+				</div>
+				<div class="col-lg col-md-6 pb-4">
+					<div class="p-4 pe-3 shadow">
+						<i class="fas fa-headset display-5 mb-3 lh-base"></i>
+						<h5 class="fw-bold">24/7 Service</h5>
+						<p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container my-5 py-5 ">	
+		<div class="row align-items-center">
+			<div class="col-lg-6 mb-5">
+				<div class="row no-gutters p-4" id="cards1">
+					<div class="col-6 text-end p-0 pe-2 ">
+						<div >
+							<img src="C:/Users/Lokesh G/Downloads/restoran/rest1.jpg" style="width:100%; height: 100%">
+						</div>
+					</div>
+					<div class="col-6 align-self-end p-0 ps-2 ">
+						<div>
+							<img src="C:/Users/Lokesh G/Downloads/restoran/rest2.jpg" style="width: 70%; height: 20%;">
+						</div>
+					</div>
+					<div class="col-6 mt-3 text-end p-0 pe-2">
+						<div>
+							<img src="C:/Users/Lokesh G/Downloads/restoran/rest3.jpg" style="width: 70%; height: 35%;">
+						</div>
+					</div>
+					<div class="col-6 mt-3 p-0 ps-2">
+					<div>
+						</div>
+							<img src="C:/Users/Lokesh G/Downloads/restoran/rest4.jpg" style="width:100%; height: 100%">
+						</div>
+					</div>
+			</div>
+			<div class="col-lg-6 ps-5">
+				<h4 class=" text-orange cursive-text fs-2">about us</h4>
+				<h1 class="fw-bolder"><strong>Welcome to <i class="fa fa-utensils pe-3 fs-1 text-orange mb-3"></i>Restoran</strong></h1>
+				<p class="text-muted">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos erat ipsum et lorem et sit, sed stet lorem sit.</p>
+				<p class="text-muted">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+				<div class="row mb-4 align-items-center">
+					<div class="col border-5 border-warning border-start">
+						<div class="d-flex gap-4">
+							<div >
+								<span id="counter1" class="text-warning fs-1 fw-bold"></span>
+							</div>
+							<div>
+								<p class="text-muted mb-0">Years of</p>
+								<p class="fw-bold">EXPERIENCE</p>
+							</div>
+						</div>
+					</div>
+					<div class="col border-5 border-warning border-start">
+						<div class="d-flex gap-4">
+							<span id="counter2" class="text-warning fs-1 fw-bold"></span>
+							<div>
+								<p class="text-muted mb-0">Popular</p>
+								<p class="fw-bold">MASTER CHEFS</p>
+							</div>
+						</div>
+						
+					</div>
+					<!-- <a href="#"  class="nav-link text-light   bg-warning py-3 px-5 d-inline">BOOK A TABLE</a> -->
+				</div>
+				<a href="#"  class="btn btn-warning text-light py-3 px-5 fw-bold fs- 6 rounded-0">READ MORE</a>
+			</div>
+		</div>
+	</div>
+	<div>
+		<div class="text-center mb-5">
+			<h4 class="text-orange cursive-text">Food Menu</h4>
+			<h1 class="fw-bold"><strong>Most Popular Items</strong></h1>
+		</div>
+		<div class="text-center">
+			<ul class="d-inline-flex nav nav-tabs justify-content-center mb-5 border-bottom" role="tablist"      >
+				<li class="nav-item">
+					<a href="#Breakfast" class="nav-link active d-flex align-items-center text-start" data-bs-toggle="tab" role="tab">
+						<i class="fas fa-coffee fs-2 text-orange"></i>
+						<div class="ps-3">
+							<small class="text-muted">Popular</small>
+							<h6 class="fw-bold">Breakfast</h6>
+						</div>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="#Lunch" class="nav-link d-flex align-items-center text-start" data-bs-toggle="tab" role="tab">
+						<i class="fas fa-hamburger fs-2 text-orange"></i>
+						<div class="ps-3">
+							<small class="text-muted">Special</small>
+							<h6 class="fw-bold">Lunch</h6>
+						</div>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="#Dinner" class="nav-link d-flex align-items-center text-start" data-bs-toggle="tab" role="tab">
+						<i class="fas fa-utensils fs-2 text-orange"></i>
+						<div class="ps-3">
+							<small class="text-muted">Lovely</small>
+							<h6 class="fw-bold">Dinner</h6>
+						</div>
+					</a>
+				</li>
+			</ul>
+			<div class="container my-5 tab-content">
+				<div id="Breakfast" class="tab-pane fade active show" role="tabpanel">
+					<div class="d-grid gap-4" >
+						<div class="row">
+							<div class="col-lg-6 col-md-12 d-flex gap-4 mb-4">
+								<div>
+									<img src="C:/Users/Lokesh G/Downloads/restoran/menu-1.jpg">
+								</div>
+								<div class="w-100">
+									<div class="d-flex justify-content-between">
+										<h5 class="fw-bold">Chicken Burger</h5>
+										<h5 class="fw-bold text-orange">$115</h5>
+									</div><hr class="p-0 m-0">
+									<p class="text-start">Ipsum ipsum clita erat amet dolor justo diam</p>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-12 d-flex gap-4">
+								<div>
+									<img src="C:/Users/Lokesh G/Downloads/restoran/menu-2.jpg">
+								</div>
+								<div class="w-100">
+									<div class="d-flex justify-content-between">
+										<h5 class="fw-bold">Chicken Burger</h5>
+										<h5 class="fw-bold text-orange">$115</h5>
+									</div><hr class="p-0 m-0">
+									<p class="text-start">Ipsum ipsum clita erat amet dolor justo diam</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-6 col-md-12 d-flex gap-4  mb-4">
+								<div>
+									<img src="C:/Users/Lokesh G/Downloads/restoran/menu-3.jpg">
+								</div>
+								<div class="w-100">
+									<div class="d-flex justify-content-between">
+										<h5 class="fw-bold">Chicken Burger</h5>
+										<h5 class="fw-bold text-orange">$115</h5>
+									</div><hr class="p-0 m-0">
+									<p class="text-start">Ipsum ipsum clita erat amet dolor justo diam</p>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-12 d-flex gap-4">
+								<div>
+									<img src="C:/Users/Lokesh G/Downloads/restoran/menu-4.jpg">
+								</div>
+								<div class="w-100">
+									<div class="d-flex justify-content-between">
+										<h5 class="fw-bold">Chicken Burger</h5>
+										<h5 class="fw-bold text-orange">$115</h5>
+									</div><hr class="p-0 m-0">
+									<p class="text-start">Ipsum ipsum clita erat amet dolor justo diam</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-6 col-md-12 d-flex gap-4  mb-4">
+								<div>
+									<img src="C:/Users/Lokesh G/Downloads/restoran/menu-5.jpg">
+								</div>
+								<div class="w-100">
+									<div class="d-flex justify-content-between">
+										<h5 class="fw-bold">Chicken Burger</h5>
+										<h5 class="fw-bold text-orange">$115</h5>
+									</div><hr class="p-0 m-0">
+									<p class="text-start">Ipsum ipsum clita erat amet dolor justo diam</p>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-12 d-flex gap-4">
+								<div>
+									<img src="C:/Users/Lokesh G/Downloads/restoran/menu-6.jpg">
+								</div>
+								<div class="w-100">
+									<div class="d-flex justify-content-between">
+										<h5 class="fw-bold">Chicken Burger</h5>
+										<h5 class="fw-bold text-orange">$115</h5>
+									</div><hr class="p-0 m-0">
+									<p class="text-start">Ipsum ipsum clita erat amet dolor justo diam</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-6 col-md-12 d-flex gap-4  mb-4">
+								<div>
+									<img src="C:/Users/Lokesh G/Downloads/restoran/menu-7.jpg">
+								</div>
+								<div class="w-100">
+									<div class="d-flex justify-content-between">
+										<h5 class="fw-bold">Chicken Burger</h5>
+										<h5 class="fw-bold text-orange">$115</h5>
+									</div><hr class="p-0 m-0">
+									<p class="text-start">Ipsum ipsum clita erat amet dolor justo diam</p>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-12 d-flex gap-4">
+								<div>
+									<img src="C:/Users/Lokesh G/Downloads/restoran/menu-8.jpg">
+								</div>
+								<div class="w-100">
+									<div class="d-flex justify-content-between">
+										<h5 class="fw-bold">Chicken Burger</h5>
+										<h5 class="fw-bold text-orange">$115</h5>
+									</div><hr class="p-0 m-0">
+									<p class="text-start">Ipsum ipsum clita erat amet dolor justo diam</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="Lunch" class="tab-pane fade" role="tabpanel">
+					<div class="d-grid gap-4" >
+						<div class="row">
+							<div class="col-lg-6 col-md-12 d-flex gap-4 mb-4">
+								<div>
+									<img src="C:/Users/Lokesh G/Downloads/restoran/menu-1.jpg">
+								</div>
+								<div class="w-100">
+									<div class="d-flex justify-content-between">
+										<h5 class="fw-bold">Chicken Burger</h5>
+										<h5 class="fw-bold text-orange">$115</h5>
+									</div><hr class="p-0 m-0">
+									<p class="text-start">Ipsum ipsum clita erat amet dolor justo diam</p>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-12 d-flex gap-4">
+								<div>
+									<img src="C:/Users/Lokesh G/Downloads/restoran/menu-2.jpg">
+								</div>
+								<div class="w-100">
+									<div class="d-flex justify-content-between">
+										<h5 class="fw-bold">Chicken Burger</h5>
+										<h5 class="fw-bold text-orange">$115</h5>
+									</div><hr class="p-0 m-0">
+									<p class="text-start">Ipsum ipsum clita erat amet dolor justo diam</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-6 col-md-12 d-flex gap-4  mb-4">
+								<div>
+									<img src="C:/Users/Lokesh G/Downloads/restoran/menu-3.jpg">
+								</div>
+								<div class="w-100">
+									<div class="d-flex justify-content-between">
+										<h5 class="fw-bold">Chicken Burger</h5>
+										<h5 class="fw-bold text-orange">$115</h5>
+									</div><hr class="p-0 m-0">
+									<p class="text-start">Ipsum ipsum clita erat amet dolor justo diam</p>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-12 d-flex gap-4">
+								<div>
+									<img src="C:/Users/Lokesh G/Downloads/restoran/menu-4.jpg">
+								</div>
+								<div class="w-100">
+									<div class="d-flex justify-content-between">
+										<h5 class="fw-bold">Chicken Burger</h5>
+										<h5 class="fw-bold text-orange">$115</h5>
+									</div><hr class="p-0 m-0">
+									<p class="text-start">Ipsum ipsum clita erat amet dolor justo diam</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-6 col-md-12 d-flex gap-4  mb-4">
+								<div>
+									<img src="C:/Users/Lokesh G/Downloads/restoran/menu-5.jpg">
+								</div>
+								<div class="w-100">
+									<div class="d-flex justify-content-between">
+										<h5 class="fw-bold">Chicken Burger</h5>
+										<h5 class="fw-bold text-orange">$115</h5>
+									</div><hr class="p-0 m-0">
+									<p class="text-start">Ipsum ipsum clita erat amet dolor justo diam</p>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-12 d-flex gap-4">
+								<div>
+									<img src="C:/Users/Lokesh G/Downloads/restoran/menu-6.jpg">
+								</div>
+								<div class="w-100">
+									<div class="d-flex justify-content-between">
+										<h5 class="fw-bold">Chicken Burger</h5>
+										<h5 class="fw-bold text-orange">$115</h5>
+									</div><hr class="p-0 m-0">
+									<p class="text-start">Ipsum ipsum clita erat amet dolor justo diam</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-6 col-md-12 d-flex gap-4  mb-4">
+								<div>
+									<img src="C:/Users/Lokesh G/Downloads/restoran/menu-7.jpg">
+								</div>
+								<div class="w-100">
+									<div class="d-flex justify-content-between">
+										<h5 class="fw-bold">Chicken Burger</h5>
+										<h5 class="fw-bold text-orange">$115</h5>
+									</div><hr class="p-0 m-0">
+									<p class="text-start">Ipsum ipsum clita erat amet dolor justo diam</p>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-12 d-flex gap-4">
+								<div>
+									<img src="C:/Users/Lokesh G/Downloads/restoran/menu-8.jpg">
+								</div>
+								<div class="w-100">
+									<div class="d-flex justify-content-between">
+										<h5 class="fw-bold">Chicken Burger</h5>
+										<h5 class="fw-bold text-orange">$115</h5>
+									</div><hr class="p-0 m-0">
+									<p class="text-start">Ipsum ipsum clita erat amet dolor justo diam</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="Dinner" class="tab-pane fade show" role="tabpanel">
+					<div class="d-grid gap-4" >
+						<div class="row">
+							<div class="col-lg-6 col-md-12 d-flex gap-4  mb-4">
+								<div>
+									<img src="C:/Users/Lokesh G/Downloads/restoran/menu-1.jpg">
+								</div>
+								<div class="w-100">
+									<div class="d-flex justify-content-between">
+										<h5 class="fw-bold">Chicken Burger</h5>
+										<h5 class="fw-bold text-orange">$115</h5>
+									</div><hr class="p-0 m-0">
+									<p class="text-start">Ipsum ipsum clita erat amet dolor justo diam</p>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-12 d-flex gap-4">
+								<div>
+									<img src="C:/Users/Lokesh G/Downloads/restoran/menu-2.jpg">
+								</div>
+								<div class="w-100">
+									<div class="d-flex justify-content-between">
+										<h5 class="fw-bold">Chicken Burger</h5>
+										<h5 class="fw-bold text-orange">$115</h5>
+									</div><hr class="p-0 m-0">
+									<p class="text-start">Ipsum ipsum clita erat amet dolor justo diam</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-6 col-md-12 d-flex gap-4 ">
+								<div>
+									<img src="C:/Users/Lokesh G/Downloads/restoran/menu-3.jpg">
+								</div>
+								<div class="w-100">
+									<div class="d-flex justify-content-between">
+										<h5 class="fw-bold">Chicken Burger</h5>
+										<h5 class="fw-bold text-orange">$115</h5>
+									</div><hr class="p-0 m-0">
+									<p class="text-start">Ipsum ipsum clita erat amet dolor justo diam</p>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-12 d-flex gap-4">
+								<div>
+									<img src="C:/Users/Lokesh G/Downloads/restoran/menu-4.jpg">
+								</div>
+								<div class="w-100">
+									<div class="d-flex justify-content-between">
+										<h5 class="fw-bold">Chicken Burger</h5>
+										<h5 class="fw-bold text-orange">$115</h5>
+									</div><hr class="p-0 m-0">
+									<p class="text-start">Ipsum ipsum clita erat amet dolor justo diam</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-6 col-md-12 d-flex gap-4">
+								<div>
+									<img src="C:/Users/Lokesh G/Downloads/restoran/menu-5.jpg">
+								</div>
+								<div class="w-100">
+									<div class="d-flex justify-content-between">
+										<h5 class="fw-bold">Chicken Burger</h5>
+										<h5 class="fw-bold text-orange">$115</h5>
+									</div><hr class="p-0 m-0">
+									<p class="text-start">Ipsum ipsum clita erat amet dolor justo diam</p>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-12 d-flex gap-4">
+								<div>
+									<img src="C:/Users/Lokesh G/Downloads/restoran/menu-6.jpg">
+								</div>
+								<div class="w-100">
+									<div class="d-flex justify-content-between">
+										<h5 class="fw-bold">Chicken Burger</h5>
+										<h5 class="fw-bold text-orange">$115</h5>
+									</div><hr class="p-0 m-0">
+									<p class="text-start">Ipsum ipsum clita erat amet dolor justo diam</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-6 col-md-12 d-flex gap-4">
+								<div>
+									<img src="C:/Users/Lokesh G/Downloads/restoran/menu-7.jpg">
+								</div>
+								<div class="w-100">
+									<div class="d-flex justify-content-between">
+										<h5 class="fw-bold">Chicken Burger</h5>
+										<h5 class="fw-bold text-orange">$115</h5>
+									</div><hr class="p-0 m-0">
+									<p class="text-start">Ipsum ipsum clita erat amet dolor justo diam</p>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-12 d-flex gap-4">
+								<div>
+									<img src="C:/Users/Lokesh G/Downloads/restoran/menu-8.jpg">
+								</div>
+								<div class="w-100">
+									<div class="d-flex justify-content-between">
+										<h5 class="fw-bold">Chicken Burger</h5>
+										<h5 class="fw-bold text-orange">$115</h5>
+									</div><hr class="p-0 m-0">
+									<p class="text-start">Ipsum ipsum clita erat amet dolor justo diam</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row mx-0 mb-5">
+		<div class="col-lg-6 col-md-12 p-0">
+			<iframe width="100%" height="100%" src="https://www.youtube.com/embed/3_rMnglt5Vk"><!-- https://youtu.be/3_rMnglt5Vk -->
+	</iframe>
+		</div>
+		<div class="col-lg-6 col-sm-12 bg-dark p-5">
+			<h5 class="text-orange cursive-text">Reservation</h5>
+			<h1 class="text-light fw-bold">Book A Table Online</h1>
+			<form action="/jk.php" method="_post">
+				<div class="row g-3">
+					<div class="col-6">
+						<div class="form-floating">
+							<input type="text" placeholder="Your Name" class="form-control" id="name">
+							<label for="name">Your Name</label>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="form-floating">
+							<input type="email" placeholder="Your Email" class="form-control"id="email">
+							<label for="email">Your Email</label>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="form-floating date">
+							<input type="date" placeholder="Date & Time" class="form-control" id="date">
+							<label for="date">Date & Time</label>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="form-floating">
+							<select name="No of People" class="form-control" id="select">
+								<option value="1">People 1</option>
+								<option value="2">People 2</option>
+								<option value="3">People 3</option>
+							</select><label for="select">No of People</label>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="form-floating">
+							<textarea class="form-control" id="textarea" placeholder="Special Request" style="height:100px"></textarea>
+							<label for="textarea">Special Request</label>
+						</div>
+					</div>
+					<div class="col-12">
+						<button class="btn bg-orange w-100 py-3 text-light fw-bold fs-6" type="submit">BOOK NOW</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="mt-4 ">
+		<div class="text-center mt-5 ">
+			<h5 class="text-orange cursive-text">Team Members</h5>
+			<h1 class="fw-bolder">Our Master Chefs</h1>
+		</div>
+		<div class="container mb-5 py-5" >
+			<div class="row gap-4 text-center" id="Chefs">
+				<div class="col p-4 shadow pb-0">
+					<div class="rounded-circle overflow-hidden mb-4">
+						<img src="C:/Users/Lokesh G/Downloads/restoran/team-1.jpg" class="img-fluid">
+					</div>
+					<h5 class="fw-bold m-0">Full Name</h5>
+					<p class="text-muted small">Designation</p>
+					<div class="d-flex justify-content-center">
+						<a href="#" class="btn mx-1 bg-dark rounded-top-circle"><i class="fab fa-facebook-f fs-5 p-1"></i></a>
+						<a href="#" class="btn btn-square bg-orange mx-1"><i class="fab fa-twitter fs-5"></i></a>
+						<a href="#" class="btn btn-square bg-orange mx-1"><i class="fab fa-instagram fs-5"></i></a>
+					</div>
+				</div>
+				<div class="col p-4 shadow">
+					<div class="rounded-circle overflow-hidden mb-4">
+						<img src="C:/Users/Lokesh G/Downloads/restoran/team-2.jpg" class="img-fluid">
+					</div>
+					<h5 class="fw-bold m-0">Full Name</h5>
+					<p class="text-muted small">Designation</p>
+					<div class="d-flex justify-content-center b">
+						<a href="#" class="btn bg-orange mx-1 rounded-top-pill"><i class="fab fa-facebook-f fs-5 rounded-top-circle"></i></a>
+						<a href="#" class="btn btn-square bg-orange mx-1"><i class="fab fa-twitter fs-5"></i></a>
+						<a href="#" class="btn btn-square bg-orange mx-1"><i class="fab fa-instagram fs-5"></i></a>
+					</div>
+				</div>
+				<div class="col p-4 shadow">
+					<div class="rounded-circle overflow-hidden mb-4">
+						<img src="C:/Users/Lokesh G/Downloads/restoran/team-3.jpg" class="img-fluid">
+					</div>
+					<h5 class="fw-bold m-0">Full Name</h5>
+					<p class="text-muted small">Designation</p>
+				</div>
+				<div class="col p-4 shadow">
+					<div class="rounded-circle overflow-hidden mb-4">
+						<img src="C:/Users/Lokesh G/Downloads/restoran/team-4.jpg" class="img-fluid">
+					</div>
+					<h5 class="fw-bold m-0">Full Name</h5>
+					<p class="text-muted small">Designation</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div>
+		<div class="text-center mt-5 ">
+			<h5 class="text-orange cursive-text">Testimonial</h5>
+			<h1 class="fw-bolder">Our Client Says</h1>
+		</div>
+		<div class="container">
+			<div class="row b">
+				<div class="col">
+					<p class="text-muted">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+					<div class="d-flex align-items-center gap-3">
+						<img src="C:/Users/Lokesh G/Downloads/restoran/person1.jpg" class="rounded-circle">
+						<div>
+							<h5 class="fw-bold m-0">Client Name</h5>
+							<p class="text-muted small">Profession</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<footer class="text-light pt-5 mt-5 px-4" style="background: rgb(11, 8, 39);">
+		<div class="m-5 p-5 pb-0 pt-2">
+			<div class="row lh-lg pb-4">
+				<div class="col  small">
+					<h4 class="cursive-text text-orange mb-4">Company</h4>
+					<a href="#" class="nav-link"><i class="fas fa-chevron-right pe-2"></i>About Us</a>
+					<a href="#" class="nav-link"><i class="fas fa-chevron-right pe-2"></i>Contact Us</a>
+					<a href="#" class="nav-link"><i class="fas fa-chevron-right pe-2"></i>Reservation</a>
+					<a href="#" class="nav-link"><i class="fas fa-chevron-right pe-2"></i>Privacy Policy</a>
+					<a href="#" class="nav-link"><i class="fas fa-chevron-right pe-2"></i>Terms & Condition</a>
+				</div>
+				<div class="col">
+					<h4 class="cursive-text text-orange mb-4">Contact</h4>
+					<a href="#" class="nav-link"><i class="fas fa-map-marker-alt pe-2"></i>123 Street, New York, USA</a>
+					<a href="#" class="nav-link"><i class="fas fa-phone-alt pe-2"></i></i>+012 345 67890</a>
+					<a href="#" class="nav-link"><i class="fas fa-envelope pe-2"></i></i>info@example.com</a>
+					<div class="mt-2">
+						<a href=""><i class="fab fa-twitter rounded-circle b p-2 me-1"></i></a>
+						<a href=""><i class="fab fa-facebook-f rounded-circle b me-1 p-2"></i></a>
+						<a href=""><i class="fab fa-youtube rounded-circle b p-2 me-1"></i></a>
+						<a href=""><i class="fab fa-linkedin-in rounded-circle b p-2"></i></a>
+					</div>
+				</div>
+				<div class="col lh-sm">
+					<h4 class="cursive-text text-orange mb-4">Opening</h4>
+					<p>Monday-Saturday</p>
+					<p class=" mb-4">09AM-09PM</p>
+					<p>Sunday</p>
+					<p>10AM-08PM</p>
+				</div>
+				<div class="col">
+					<h4  class="cursive-text text-orange mb-4">Newsletter</h4>
+					<p class="lh-sm">Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+					<div class="" style="max-width: 400px;">
+						<input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+						<button type="button" class="btn btn-primary py-2 mt-2 me-2">SignUp</button>
+					</div>
+
+<!-- 
+					<div class="row bg-light">
+						<div class="col form-floating">
+							<input type="email" name="mail" placeholder="Your Email" class="form-control" id="mail"><label for="mail">Your Email</label>
+						</div>
+						<div class="col m-0 p-0 b">
+							<button type="submit" class="btn bg-orange my-2 text-light">SIGN UP</button>
+						</div>
+					</div> -->
+				</div>
+			</div>
+			<hr>
+			<div class="row justify-content-between">
+				<div class="col">
+					<p>&copy; &nbsp;<a href="">Your Site Name</a>, All Right Reserved. Designed By&nbsp;<a href="">HTML Codex</a><br><br>Distributed by <a href="">ThemeWagon</a></p>
+				</div>
+				<div class="col text-end">
+					<a href="#" class="d-inline nav-link me-2 pe-2 border-end">Home</a>
+					<a href="#" class="d-inline nav-link me-2 pe-2 border-end">Cookies</a>
+					<a href="#" class="d-inline nav-link me-2 pe-2 border-end">Help</a>
+					<a href="#" class="nav-link d-inline me-2 pe-2">FQAs</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

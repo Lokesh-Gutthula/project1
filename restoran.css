@@ -1,0 +1,186 @@
+body{
+	height: 4000px;	
+}
+*{
+	font-family: 'Nunito', sans-serif;
+}
+.text-orange{
+	color: orange;
+}
+.bg-orange{
+	background-color: orange;
+}
+.cursive-text{
+	font-family: 'Pacifico', cursive;
+}
+.navigation{
+	background: linear-gradient( rgba(11, 8, 39,0.8),
+                        rgba(11, 8, 39,0.8)), url("C:/Users/Lokesh G/Downloads/restoran/beef2.jpg") no-repeat;
+	background-size: cover;
+}
+
+/*	Navigation bar size and color and hover	*/
+.navigation ul li a{
+	color: white;
+	font-weight: 700;
+	font-size: 1rem;
+}
+
+.navigation ul li a:hover{
+	color: orange;
+}
+/*		dropdown activate when hover		*/
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+/*		sliding		*/
+
+#slideLeft{
+	animation: translate 1s ;
+	animation-name: slideLeft;
+}
+@keyframes slideLeft{
+	0% { transform: translateX(-400px); }
+	100% { transform: translateX(0px); }
+}
+
+/*		rotating		*/
+#side-heading{
+	font-weight: 900;
+}
+
+#spin .rotate-image{
+	animation-name: rotating;
+	animation: rotating 35s infinite linear;
+}
+@keyframes rotating{
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/*		cards		*/
+#cards .shadow{
+	transition: background-color 1s ease-out 100ms;
+}
+
+#cards .shadow:hover{
+	color: white;
+	background-color: orange;
+}
+
+
+/*		Sliding Up		*/
+#cards div{
+	opacity: 0;
+	animation-name: slideup;
+	animation: slideup 1s ease-in-out forwards;
+}
+
+@keyframes slideup{
+	from {
+		transform: translateY(50px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+
+#cards div:nth-child(1){
+	animation-delay: 0.1s;
+}
+#cards div:nth-child(2){
+	animation-delay: 0.3s;
+}
+#cards div:nth-child(3){
+	animation-delay: 0.6s;
+}
+#cards div:nth-child(4){
+	animation-delay: 1s;
+}
+
+
+/*		images		*/
+
+
+#cards1 div{
+	opacity: 0;
+	animation-name: zoomout;
+	animation: zoomout 2s ease-in-out forwards;
+}
+
+
+@keyframes zoomout{
+	from {
+		opacity: 0;
+		transform: scale(0);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1.0);
+	}
+}
+
+
+#cards1 div:nth-child(1){
+	animation-delay: 0.3s;
+}
+#cards1 div:nth-child(2){
+	animation-delay: 0.5s;
+}
+#cards1 div:nth-child(3){
+	animation-delay: 0.8s;
+}
+#cards1 div:nth-child(4){
+	animation-delay: 1.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.section-title::after{
+	position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    right: -55px;
+    margin-top: -1px;
+    background: orange;
+}*/
+
+/*#Chefs div:hover img{
+	transform: scale(1.1);
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.b{
+	border: 2px solid pink;
+}
