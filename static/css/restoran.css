@@ -1,0 +1,253 @@
+
+*{
+	font-family: 'Nunito', sans-serif;
+}
+.text-orange{
+	color: orange;
+}/*
+.bg-orange{
+	background-color: orange;
+}*/
+.cursive-text{
+	font-family: 'Pacifico', cursive;
+}
+.navigation{
+	background: linear-gradient( rgba(11, 28, 39,0.8),
+                        rgba(11, 28, 39,0.8)), url("../images/beef2.jpg") no-repeat;
+	background-size: cover;
+}
+
+/*	Navigation bar size and color and hover	*/
+.navigation ul li a{
+	color: white;
+	font-weight: 700;
+	font-size: 1rem;
+}
+
+.navigation ul li a:hover{
+	color: orange;
+}
+/*		dropdown activate when hover		*/
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+/*		sliding		*/
+
+#slideLeft{
+	animation: translate 1s ;
+	animation-name: slideLeft;
+}
+@keyframes slideLeft{
+	0% { transform: translateX(-400px); }
+	100% { transform: translateX(0px); }
+}
+
+/*		rotating		*/
+#side-heading{
+	font-weight: 900;
+}
+
+#spin .rotate-image{
+	animation-name: rotating;
+	animation: rotating 35s infinite linear;
+}
+@keyframes rotating{
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/*		cards		*/
+#cards .shadow{
+	transition: background-color 1s ease-out 100ms;
+}
+
+#cards .shadow:hover{
+	color: white;
+	background-color: orange;
+}
+
+
+/*		Sliding Up		*/
+#cards div{
+	opacity: 0;
+	animation-name: slideup;
+	animation: slideup 1s ease-in-out forwards;
+}
+
+@keyframes slideup{
+	from {
+		transform: translateY(50px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+
+#cards div:nth-child(1){
+	animation-delay: 0.1s;
+}
+#cards div:nth-child(2){
+	animation-delay: 0.3s;
+}
+#cards div:nth-child(3){
+	animation-delay: 0.6s;
+}
+#cards div:nth-child(4){
+	animation-delay: 1s;
+}
+
+
+/*		images		*/
+
+
+#cards1 div{
+	opacity: 0;
+	animation-name: zoomout;
+	animation: zoomout 2s ease-in-out forwards;
+}
+
+
+@keyframes zoomout{
+	from {
+		opacity: 0;
+		transform: scale(0);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1.0);
+	}
+}
+
+
+#cards1 div:nth-child(1){
+	animation-delay: 0.3s;
+}
+#cards1 div:nth-child(2){
+	animation-delay: 0.5s;
+}
+#cards1 div:nth-child(3){
+	animation-delay: 0.8s;
+}
+#cards1 div:nth-child(4){
+	animation-delay: 1.3s;
+}
+
+
+
+#slidedown{
+	animation-name: slidingdown;
+	animation: slidingdown 2s ;
+}
+@keyframes slidingdown{
+	from {
+		opacity:0;
+		transform: translateY(-100px);}
+	to {
+		opacity: 1;
+		transform: translateY(0px);}
+}
+
+
+
+.movingup{
+	animation-name: moving;
+	animation: moving 2s;
+}
+@keyframes moving{
+	0% {
+		opacity: 0;
+		transform: translateY(100px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+
+.movingdown{
+	animation-name: movingbottom;
+	animation: movingbottom 1s;
+}
+@keyframes movingbottom{
+	0% {
+		opacity: 0;
+		transform: translateY(-100px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+
+
+
+/*.section-title::after{
+	position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    right: 50%;
+    margin-top: -1px;
+    background: orange;
+}*/
+
+
+
+#Chefs div img{
+	transition: transform 1s;
+}
+#Chefs div:hover img{
+	transform: scale(1.1);
+}
+
+#Chefs div:hover .shows{
+	display: inline;
+}
+
+.shows{
+	display: none;
+	animation-name: showin;
+	animation: showin 10s ease;
+}
+@keyframes showin{
+	from {display: none;}
+	to {display: inline;}
+}
+
+./*shows{
+	display: none;
+	transition: display 5s ease;
+}
+*/
+
+/*#chefs .trans .shows{
+	display: none;
+}*/
+/*#Chefs div:hover img{
+	transform: scale(1.2);
+}*/
+
+
+.b{
+	border: 2px solid pink;
+}
+
+
+
+/*
+
+.section-title::after{
+	display: block;
+	position: relative;
+	top: -15px;
+	left: 120px;
+	width: 60px;
+	border: 0.17rem solid;
+    content: "";
+    background: orange;
+}*/
