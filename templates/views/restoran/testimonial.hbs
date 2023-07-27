@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	{{>heading}}
+<!-- 		owl-carousel		-->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+</head>
+<body>
+	<div class="navigation">
+		<div class="pb-5 mb-5">
+			<nav class="navbar navbar-expand-lg navbar-light align-items-center py-3 px-5 mb-5">
+				<a href="#" class="navbar-brand fs-1 fw-bold" style="color:orange;"><i class="fa fa-utensils pe-3"></i>Restoran</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#tog" aria-controls="tog" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+				<div class="collapse navbar-collapse justify-content-end" id="tog">
+					<ul class="navbar-nav align-items-center" >
+						<li class="nav-item pe-2"><a href="/restoran" class="nav-link" >HOME</a></li>
+						<li class="nav-item pe-2"><a href="/restoran/about" class="nav-link">ABOUT</a></li>
+						<li class="nav-item pe-2"><a href="/restoran/service" class="nav-link">SERVICE</a></li>
+						<li class="nav-item pe-2"><a href="/restoran/menu" class="nav-link">MENU</a></li>
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link dropdown-toggle pe-2" data-bs-toggle="dropdown" style="color:orange;">PAGES</a>
+							<ul class="dropdown-menu" >
+								<li><a href="/restoran/booking" class="dropdown-item text-warning">BOOKING</a></li>
+								<li><a href="/restoran/team" class="dropdown-item text-warning">OUR TEAM
+								</a></li>
+								<li><a href="/restoran/Testimonial" class="dropdown-item text-warning bg-success">TESTIMONIAL</a></li>
+							</ul>
+						</li>
+						<li class="nav-item pe-2"><a href="/restoran/Contact" class="nav-link">CONTACT</a></li>
+						<button class="btn btn-warning py-2 px-4 rounded-0 text-light fw-bold">BOOK A TABLE</button>
+					</ul>
+				</div>
+			</nav>
+			<div class="text-center">
+				<h1 class="display-3 fw-bold mb-4 text-light ">Testimonial</h1>
+				<ul class="breadcrumb justify-content-center pb-5">
+				    <li class="breadcrumb-item"><a href="/restoran" class="text-warning">HOME</a></li>
+				    <li class="breadcrumb-item"><a href="#" class="text-warning">PAGES</a></li>
+				    <li class="breadcrumb-item text-light">TESTIMONIAL</li>   
+				 </ul>
+			</div>
+		</div>
+	</div>
+<!-- 						Owl-Carousel 			-->
+		{{>carousel}}
+	<!--   				footer 		 -->
+		{{>footer}}
+
+	<script>
+	$('.owl-carousel').owlCarousel({
+	    loop:true,
+	    margin:10,
+	    nav:true,
+	    autoplay:true,
+	    autoplayTimeout:3000,
+	    autoplayHoverPause:true,
+	    responsive:{
+	        0:{
+	            items:1
+	        },
+	        600:{
+	            items:3
+	        },
+	        1000:{
+	            items:3
+	        }
+	    }
+	})
+	</script>
+</body>
+</html>

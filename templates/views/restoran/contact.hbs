@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	{{>heading}}
+	<style>
+		.form-control:focus {
+		  border-color: pink;
+		  box-shadow: 0 0 5px hotpink;
+		}
+	</style>
+</head>
+<body>
+	<div class="navigation">
+		<div class="pb-5 mb-5">
+			<nav class="navbar navbar-expand-lg navbar-light align-items-center py-3 px-5 mb-5">
+				<a href="/restoran" class="navbar-brand fs-1 fw-bold" style="color:orange;"><i class="fa fa-utensils pe-3"></i>Restoran</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#tog" aria-controls="tog" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+				<div class="collapse navbar-collapse justify-content-end" id="tog">
+					<ul class="navbar-nav align-items-center" >
+						<li class="nav-item pe-2"><a href="/restoran" class="nav-link" >HOME</a></li>
+						<li class="nav-item pe-2"><a href="/restoran/about" class="nav-link">ABOUT</a></li>
+						<li class="nav-item pe-2"><a href="/restoran/service" class="nav-link">SERVICE</a></li>
+						<li class="nav-item pe-2"><a href="/restoran/menu" class="nav-link">MENU</a></li>
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link dropdown-toggle pe-2" data-bs-toggle="dropdown">PAGES</a>
+							<ul class="dropdown-menu" >
+								<li><a href="/restoran/booking" class="dropdown-item text-warning">BOOKING</a></li>
+								<li><a href="/restoran/team" class="dropdown-item text-warning">OUR TEAM
+								</a></li>
+								<li><a href="/restoran/testimonial" class="dropdown-item text-warning">TESTIMONIAL</a></li>
+							</ul>
+						</li>
+						<li class="nav-item pe-2"><a href="/restoran/contact" class="nav-link" style="color:orange;">CONTACT</a></li>
+						<button class="btn btn-warning py-2 px-4 rounded-0 text-light fw-bold">BOOK A TABLE</button>
+					</ul>
+				</div>
+			</nav>
+			<div class="text-center">
+				<h1 class="display-3 fw-bold mb-4 text-light ">Contact Us</h1>
+				<ul class="breadcrumb justify-content-center pb-5">
+				    <li class="breadcrumb-item"><a href="/restoran" class="text-warning">HOME</a></li>
+				    <li class="breadcrumb-item"><a href="#" class="text-warning">PAGES</a></li>
+				    <li class="breadcrumb-item text-light">CONTACT</li>   
+				 </ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="text-center mt-5 ">
+			<h5 class="text-orange cursive-text">Contact Us</h5>
+			<h1 class="fw-bolder">Contact For Any Query</h1>
+		</div>
+		<div class="d-flex justify-content-between">
+			<div>
+				<h5 class="text-orange cursive-text">Booking</h5>
+				<p><i class="fa-regular fa-envelope-open me-2"></i>book@example.com</p>
+			</div>
+			<div>
+				<h5 class="text-orange cursive-text">General</h5>
+				<p><i class="fa-regular fa-envelope-open me-2"></i>info@example.com</p>
+			</div>
+			<div>
+				<h5 class="text-orange cursive-text">Technical</h5>
+				<p><i class="fa-regular fa-envelope-open me-2"></i>tech@example.com</p>
+			</div>
+		</div>
+<!-- 					Table Booking			 -->
+		<div class="row mx-0 my-5">
+			<div class="col-lg-6 col-md-12 p-0">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7639.355386424432!2d80.81927868976396!3d16.79270355734291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3675e5f312c661%3A0xab7189f421622491!2sIIIT%20Nuzvid%20Campus%2C%20Nuzividu%2C%20Andhra%20Pradesh%20521202!5e0!3m2!1sen!2sin!4v1687669902679!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-100 h-100"></iframe>
+			</div>
+			<div class="col-lg-6 col-sm-12 ">
+				<form action="/jk.php" method="_post">
+					<div class="row g-3">
+						<div class="col-6">
+							<div class="form-floating">
+								<input type="text" placeholder="Your Name" class="form-control" id="name">
+								<label for="name">Your Name</label>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="form-floating">
+								<input type="email" placeholder="Your Email" class="form-control"id="email">
+								<label for="email">Your Email</label>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="form-floating date">
+								<input type="text" placeholder="subject" class="form-control" id="subject">
+								<label for="subject">subject</label>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="form-floating">
+								<textarea class="form-control" id="textarea" placeholder="Special Request" style="height:100px"></textarea>
+								<label for="textarea">Message</label>
+							</div>
+						</div>
+						<!-- <div class="col-12">
+							<input type="submit" name="submit" value="Send Message" class="bg-success w-100 border-0 rounded text-light fw-bold py-3">
+						</div> -->
+						<div class="col-12">
+							<button class="btn bg-success w-100 py-3 text-light fw-bold fs-6" type="submit">Send Message</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+<!-- 		footer 			 -->
+		{{>footer}}
+</body>
+</html>
